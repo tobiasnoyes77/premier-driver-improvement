@@ -1,0 +1,45 @@
+---
+layout: base.njk
+title: Contact | Premier Driver Improvement Clinic
+description: Contact Premier Driver Improvement Clinic by phone or email for help with your Online 8 Hour Driver Improvement Clinic. Help desk hours listed.
+permalink: /contact/
+---
+
+<section class="hero hero--sm">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <h1 class="fade-in">Contact Us</h1>
+    <p class="fade-in" style="max-width: 560px; margin-top: 12px; color: rgba(255,255,255,0.82);">Questions about enrolling, your certificate, or the final exam? We'd be glad to help. Call or email us during help desk hours.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-cards">
+
+      <a href="tel:{{ site.phoneTel }}" class="contact-card">
+        <div class="contact-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 5.81 5.63l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <span class="contact-card__label">Phone</span>
+        <span class="contact-card__value">{{ site.phone }}</span>
+      </a>
+
+      <a href="mailto:{{ site.email }}" class="contact-card">
+        <div class="contact-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">{{ site.email }}</span>
+      </a>
+
+      <div class="contact-card">
+        <div class="contact-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <span class="contact-card__label">Help Desk Hours</span>
+        <span class="contact-card__value">{{ site.helpDeskDays }}<br>{{ site.helpDeskHours }}</span>
+      </div>
+
+    </div>
+  </div>
+</section>

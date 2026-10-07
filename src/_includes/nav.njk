@@ -1,0 +1,21 @@
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/" class="nav__logo">
+      <img src="/images/logo.webp" alt="Premier Driver Improvement Clinic logo" width="520" height="318">
+    </a>
+
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+
+    <ul id="nav-menu" class="nav__menu">
+      <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="/our-story/" {% if page.url == "/our-story/" %}aria-current="page"{% endif %}>About Us</a></li>
+      <li><a href="/driver-improvement-course/" {% if page.url == "/driver-improvement-course/" %}aria-current="page"{% endif %}>8 Hour Course</a></li>
+      <li><a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a></li>
+      <li><a href="tel:{{ site.phoneTel }}" class="nav__phone-btn">{{ site.phone }}</a></li>
+    </ul>
+  </nav>
+</header>

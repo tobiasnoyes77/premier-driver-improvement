@@ -1,0 +1,275 @@
+---
+layout: base.njk
+title: Online 8 Hour Driver Improvement Clinic | Premier Driver Improvement Clinic
+description: Virginia DMV-approved Online 8 Hour Driver Improvement Clinic. Earn safe driving points, meet court requirements, and take the final exam online. $69.95, self-paced.
+permalink: /driver-improvement-course/
+---
+
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Online 8 Hour Driver Improvement Clinic",
+  "description": "{{ description }}",
+  "url": "{{ site.url }}/driver-improvement-course/",
+  "provider": { "@type": "EducationalOrganization", "name": "{{ site.name }}", "url": "{{ site.url }}" },
+  "courseMode": "online",
+  "educationalCredentialAwarded": "Electronic Certificate of Completion",
+  "offers": { "@type": "Offer", "price": "{{ site.price }}", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+}
+</script>
+{% endblock %}
+
+<div class="dic-hero">
+  <div class="container">
+    <div class="dic-hero__inner" style="grid-template-columns: 1fr 520px;">
+      <div class="dic-hero__text">
+        <div class="dic-hero__tag">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="5"/></svg>
+          Virginia DMV Approved
+        </div>
+        <h1>Online 8 Hour Driver Improvement Clinic</h1>
+        <p>Approved by the Virginia DMV, this program helps drivers sharpen their driving knowledge, meet court requirements, and build safer habits behind the wheel — all completed online, at whatever pace works for you.</p>
+        <a href="{{ site.enrollUrl }}" class="btn btn--primary">
+          Enroll Now
+          <svg class="btn__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <p class="dic-hero__price-note"><span class="dic-price">${{ site.price }}</span> — everything included, no hidden fees</p>
+      </div>
+      <div class="dic-hero__image">
+        <img src="/images/woman-computer-table-work-preview.webp" alt="Student taking the online driver improvement course on a laptop" loading="eager">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dic-body">
+  <div class="container">
+    <div class="dic-layout">
+
+      <div class="dic-content">
+
+        <div class="dic-block fade-in">
+          <span class="dic-block__label">Eligibility</span>
+          <h2 class="dic-block__title">Is This Course Right for You?</h2>
+          <p class="dic-block__body">This course is a good fit for drivers who need to:</p>
+          <ul class="dic-list">
+            <li>Fulfill a court-ordered driver improvement requirement</li>
+            <li>Add up to 5 Safe Driving Points to their Virginia driving record</li>
+            <li>Possibly qualify for a discount on auto insurance</li>
+          </ul>
+          <p class="notice">It is your responsibility to determine if your court accepts this computer-based driver improvement course to satisfy court required driver improvement courses.</p>
+        </div>
+
+        <div class="dic-block fade-in" id="testing">
+          <span class="dic-block__label">Testing</span>
+          <h2 class="dic-block__title">Final Exam &amp; Testing Procedures</h2>
+          <p class="dic-block__body">The End of Course final test can be taken online. There's no testing center to visit — here's exactly how it works.</p>
+          <ol class="steps-stacked">
+            <li class="steps-stacked__item">
+              <span class="steps-stacked__num">1</span>
+              <div>
+                <strong>Finish the course material</strong>
+                <p>Work through all 8 hours of lessons and chapter quizzes. The final exam becomes available once the course content is complete.</p>
+              </div>
+            </li>
+            <li class="steps-stacked__item">
+              <span class="steps-stacked__num">2</span>
+              <div>
+                <strong>Take the final exam online</strong>
+                <p>The exam has {{ site.exam.questions }} multiple-choice questions, all drawn from the course material. Take it from any device with an internet connection.</p>
+              </div>
+            </li>
+            <li class="steps-stacked__item">
+              <span class="steps-stacked__num">3</span>
+              <div>
+                <strong>Score {{ site.exam.passingScore }} or higher</strong>
+                <p>You need a passing score of {{ site.exam.passingScore }} or better to complete the course.</p>
+              </div>
+            </li>
+            <li class="steps-stacked__item">
+              <span class="steps-stacked__num">4</span>
+              <div>
+                <strong>Didn't pass? Try again tomorrow</strong>
+                <p>You can retake the final exam, but students may attempt the final exam no more than one time per day.</p>
+              </div>
+            </li>
+            <li class="steps-stacked__item">
+              <span class="steps-stacked__num">5</span>
+              <div>
+                <strong>Get your certificate</strong>
+                <p>After you pass, your electronic certificate of completion is emailed to you, and your completion is reported to the Virginia DMV.</p>
+              </div>
+            </li>
+          </ol>
+          <h3 class="dic-block__subtitle">Testing Rules</h3>
+          <ul class="rule-list">
+            <li>Open book testing is not permitted.</li>
+            <li>Students may attempt the final exam no more than one time per day.</li>
+            <li>Chapter quizzes may be retaken as many times as you need.</li>
+          </ul>
+        </div>
+
+        <div class="dic-block fade-in" id="certificate">
+          <span class="dic-block__label">Certificate</span>
+          <h2 class="dic-block__title">Your Certificate &amp; DMV Record</h2>
+          <p class="dic-block__body">When you pass the final exam, you'll receive an electronic certificate of completion by email showing that you successfully completed an Eight-Hour Online Driver Improvement Clinic Course. Download it right away and submit it to the court or DMV as needed.</p>
+          <p class="notice">Your completion of the online driver improvement clinic will be posted to your driving record within 24 hours of the completion date of the course.</p>
+        </div>
+
+        <div class="dic-block fade-in" id="fees">
+          <span class="dic-block__label">Fees</span>
+          <h2 class="dic-block__title">Course Fees</h2>
+          <p class="dic-block__body">Here is every fee associated with this course. There are no others.</p>
+          <table class="fee-table">
+            <thead>
+              <tr><th scope="col">Item</th><th scope="col">Fee</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Online 8 Hour Driver Improvement Clinic (course fee)</td><td>${{ site.price }}</td></tr>
+              <tr><td>End of Course final test (taken online)</td><td>Included</td></tr>
+              <tr><td>Final exam retakes</td><td>Included</td></tr>
+              <tr><td>Electronic certificate of completion</td><td>Included</td></tr>
+              <tr><td>Reporting your completion to the Virginia DMV</td><td>Included</td></tr>
+              <tr><td>Centralized testing site fees<span class="fee-table__sub">Not applicable — the final exam is taken online</span></td><td>$0.00</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td>Total</td><td>${{ site.price }}</td></tr>
+            </tfoot>
+          </table>
+          <p class="fee-table__note">Payment is a single charge, processed securely through Stripe.</p>
+        </div>
+
+        <div class="dic-block fade-in">
+          <span class="dic-block__label">FAQ</span>
+          <h2 class="dic-block__title">Common Questions</h2>
+          <div class="faq">
+            <div class="faq__item">
+              <button class="faq__trigger" aria-expanded="false">
+                <h3 class="faq__heading">How long does the course take?</h3>
+                <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq__content" aria-hidden="true">
+                <p>The course runs 8 hours in total, but you don't have to do it all at once. Log in and out whenever you like — your progress saves automatically.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__trigger" aria-expanded="false">
+                <h3 class="faq__heading">How is my certificate delivered?</h3>
+                <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq__content" aria-hidden="true">
+                <p>As soon as you complete the course, your electronic certificate of completion is emailed to you as a PDF, ready to submit to the court or DMV.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__trigger" aria-expanded="false">
+                <h3 class="faq__heading">What happens if I don't pass the final exam?</h3>
+                <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq__content" aria-hidden="true">
+                <p>Chapter quizzes can be retaken as many times as you need. If you don't pass the final exam, you can try again on another day — students may attempt the final exam no more than one time per day.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__trigger" aria-expanded="false">
+                <h3 class="faq__heading">What's the course format?</h3>
+                <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq__content" aria-hidden="true">
+                <p>Lessons come in short, interactive sections built around real-world scenarios, hands-on exercises, personal reflections, and quick quizzes that keep things moving. The format changes throughout, so you won't be stuck watching long videos or scrolling through endless text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dic-block fade-in">
+          <span class="dic-block__label">Benefits</span>
+          <h2 class="dic-block__title">Why Take This Course</h2>
+          <div class="benefit-cards">
+            <div class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="benefit-card__body">
+                <strong>DMV-Approved &amp; Accepted by Many Courts</strong>
+                <span>Fulfills Virginia DMV requirements and satisfies many court-ordered driver improvement programs.</span>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="benefit-card__body">
+                <strong>Fully Online &amp; Self-Paced</strong>
+                <span>Finish the whole 8-hour program, final exam included, on any computer, tablet, or phone.</span>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="benefit-card__body">
+                <strong>Certificate Delivered Instantly</strong>
+                <span>A downloadable electronic certificate lands in your inbox the moment you finish, ready to submit to the court.</span>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-card__icon">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="benefit-card__body">
+                <strong>Enroll Risk-Free</strong>
+                <span>Decide not to finish? You'll get a full refund as long as your certificate hasn't been issued.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="dic-sidebar">
+        <div class="dic-sidebar__card">
+          <div class="dic-sidebar__price-row">
+            <span class="dic-sidebar__price">${{ site.price }}</span>
+          </div>
+          <p class="dic-sidebar__note">One payment. No hidden fees.</p>
+          <a href="{{ site.enrollUrl }}" class="btn btn--primary btn--full">
+            Register Now
+            <svg class="btn__arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <ul class="dic-sidebar__checklist">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Immediate access once you enroll
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Work at your own pace
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Final exam taken online
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Electronic certificate emailed on completion
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Posted to your driving record within 24 hours
+            </li>
+          </ul>
+        </div>
+        <div class="dic-sidebar__help">
+          <strong>Need help?</strong>
+          <p>Help desk: {{ site.helpDeskDays }}, {{ site.helpDeskHours }}</p>
+          <a href="tel:{{ site.phoneTel }}">{{ site.phone }}</a>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</div>

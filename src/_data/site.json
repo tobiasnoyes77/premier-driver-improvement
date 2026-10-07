@@ -1,0 +1,20 @@
+{
+  "name": "Premier Driver Improvement Clinic",
+  "legalName": "Premier Driver Improvement Clinic",
+  "phone": "(804) 399-1531",
+  "phoneTel": "8043991531",
+  "email": "premierdriverimprovement@gmail.com",
+  "url": "https://www.premierdriverimprovement.com",
+  "price": "69.95",
+  "enrollUrl": "https://buy.stripe.com/REPLACE_WITH_STRIPE_PAYMENT_LINK",
+  "helpDeskDays": "Monday – Friday",
+  "helpDeskHours": "9:00 AM – 5:00 PM (Eastern Time)",
+  "exam": {
+    "questions": 50,
+    "passingScore": "80%"
+  },
+  "dmvPhone": "1-877-885-5790",
+  "dmvPhoneTel": "+18778855790",
+  "gaId": "",
+  "copyright": "2026 Premier Driver Improvement Clinic. All rights reserved."
+}
